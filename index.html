@@ -53,33 +53,65 @@
         </div>
     </nav>
 
+    <section id="section-steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="f1-steps">
+                        <div class="f1-progress">
+                            <div class="f1-progress-line" data-now-value="31" data-number-of-steps="3" style="width: 31%;"></div>
+                        </div>
+                        <div class="f1-step active">
+                            <div class="f1-step-icon">
+                                <i class="far fa-keyboard"></i>
+                            </div>
+                            <p>generate</p>
+                        </div>
+                        <div class="f1-step">
+                            <div class="f1-step-icon">
+                                <i class="far fa-arrow-alt-circle-down"></i>
+                            </div>
+                            <p>download</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="section-form">
         <div class="container">
-            <form>
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-4 col-form-label">Sender Guld Username</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="Sender">
-                    </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group row">
+                            <label for="sender" class="col-sm-4 col-form-label">Sender Guld Username</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="sender" placeholder="Sender">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="receiver" class="col-sm-4 col-form-label">Receiver Guld Username</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="receiver" placeholder="Receiver">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="amount" class="col-sm-4 col-form-label">Amount</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="amount" placeholder="3.5">
+                            </div>
+                        </div>
+                        <div class="form-group row text-center">
+                            <div class="col-sm-12">
+                                <a id="generate" class="btn btn-primary">generate</a>
+                                <a download="info.txt" id="download" style="display: none">Download</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-4 col-form-label">Recieving Guld Username</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Recieving">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-4 col-form-label">Amount</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="3.5">
-                    </div>
-                </div>
-                <div class="form-group row text-center">
-                    <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">Generate Transaction</button>
-                    </div>
-                </div>
-            </form>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -87,7 +119,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="copytext">&copy; Guld. All rights reserved</div>
+                    <div class="copytext">&copy; guld. All rights reserved</div>
                 </div>
                 <div class="col-md-6 text-right">
                     <ul class="list-inline">
@@ -112,9 +144,8 @@
         </div>
     </footer>
     <!-- .footer -->
-
-    <!-- jquery -->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>

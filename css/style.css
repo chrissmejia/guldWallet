@@ -12,6 +12,17 @@ body {
     font-weight: 300;
 }
 
+.btn-primary, .btn-primary:visited {
+    color: #fff !important;
+    background-color: #f05a3f;
+    border: 0 !important;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: #fff;
+    background-color: #d34329 !important;
+}
+
 .header {
     width: 100%;
     z-index: 9;
@@ -54,6 +65,64 @@ body {
     margin: 0 auto;
 }
 
+#section-steps {
+    margin: 3rem 0 2rem 0;
+}
+
+#section-form {
+    margin: 0 0 2rem 0;
+}
+
+.f1-steps {
+    text-align: center;
+}
+
+.f1-progress {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.f1-progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background: #f35b3f;
+}
+
+.f1-step {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+}
+
+.f1-step-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    background: #ddd;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.f1-step.active .f1-step-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    background: #f35b3f;
+    font-size: 22px;
+    line-height: 48px;
+}
 
 .footer {
     background: #333c48;
